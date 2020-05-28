@@ -1,0 +1,17 @@
+:root {
+  /* 背景颜色*/
+  --base_color: red;
+  --bgc: cyan;
+  --bgc2: #cc33cc;
+  --bgc3: #339966;
+  --bgc4: #ffec8b;
+  --bgc5: #ff83fa;
+  --bgc6: #888282;
+  --bgc7: #dd8f83;
+  --bgc8: #3b3737;
+  --bg1: #aee2e0;
+  --bg2: #062927;
+  --bg3: #5d9e4c;
+  --bg4: #cc6e20;
+  --border: 1px solid red;
+}

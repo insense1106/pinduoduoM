@@ -1,0 +1,56 @@
+
+bg($color)
+  background-color $color   
+bgimg($w,$h,$img)
+  display inline-block
+  width $w px
+  height $h px
+  background url($img) no-repeat center
+  background-size contain
+borderbottom($color=black)
+  position relative
+  // padding-bottom 1rem
+  &:after
+    content ''
+    display flex
+    position absolute
+    // bottom -20%
+    bottom 0%
+    left 0
+    width 100%
+    transform translateX(10%)
+    border-bottom 1px solid $color
+flex_between()
+    display flex
+    justify-content: space-between
+    align-items: center
+full_screen()
+    position fixed
+    height 100vh
+    width 100%
+    top 0
+    left 0
+    z-index 999
+    background-color darkred
+    opacity 0.6
+flex_all_center()
+    display flex
+    justify-content: center
+    align-items: center
+flex_all_center_column()
+    display flex
+    justify-content: center
+    align-items: center
+    flex-direction column
+
+$c1=#339966
+$c2=cyan
+$c3=orange
+$c4=#aee2e0
+$c5=#cc33cc;
+$c6=#ff83fa
+$c7=  #dd8f83;
+$c11=#cc6e20
+$cc1=#5d9e4c;
+$cc2=grey
+$colors =black lightblue orange darkred #eee brown orangered lightyellow darkgreen green
