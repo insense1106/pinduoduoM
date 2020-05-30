@@ -180,7 +180,7 @@ export default {
     left 0%
     width 100%
     z-index 990
-    padding-bottom 4rem
+    padding-bottom 0.5rem
     // margin-bottom 1rem
     .box
         .content

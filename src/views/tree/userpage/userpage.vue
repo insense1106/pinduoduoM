@@ -25,6 +25,8 @@
     <div>
       <!-- <h1>add new content</h1> -->
       <h1>delete the content</h1>
+      <h1>{{ msg }}</h1>
+      <h1>{{ msg.data }}</h1>
     </div>
   </div>
 </template>
@@ -36,7 +38,8 @@ export default {
   props: {},
   data() {
     return {
-      canvas: null
+      canvas: null,
+      msg: {}
     };
   },
   computed: {},
@@ -48,14 +51,9 @@ export default {
   destroyed() {},
   methods: {
     handler_canvas() {
-      this.canvas = document.getElementById('canvas');
-      let ctx = this.canvas.getContext('2d');
-      let winW = window.innerWidth;
-      let winH = window.innerHeight;
-      this.canvas.width = winW;
-      this.canvas.height = winH;
-      ctx.fillStyle = 'red';
-      ctx.fillRect(10, 10, 55, 50);
+      this.msg.data = `a1`;
+      this.msg = { name: `tom` };
+      console.log(this.msg);
     }
   },
   directives: {

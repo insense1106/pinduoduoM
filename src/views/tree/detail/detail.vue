@@ -114,8 +114,8 @@ export default {
   },
   watch: {},
   created() {
+    // 获取当前商品
     this.data = JSON.parse(localStorage.getItem('item2'));
-    console.log(this.data);
   },
   mounted() {
     this.msg = '----😄😄😄😄😄---';
@@ -124,7 +124,9 @@ export default {
   destroyed() {},
   methods: {
     fn_scroll() {},
+    // better-scroll listen 滚动事件
     handler_scroll(position) {
+      //! 这种判断很消耗性能,可以优化
       if (position.y < -10) {
         this.flag_whitebar = true;
         this.flag_toast2 = true;
@@ -136,15 +138,17 @@ export default {
         ? (this.flag_backtop = true)
         : (this.flag_backtop = false);
     },
+    // 轮播图全屏
     handler_full_screen() {
       this.flag_full_screen = true;
     },
+    // 取消全屏
     handler_normal_screen() {
       this.$refs.full_screen.classList.remove('mixin_full_screen');
       this.flag_full_screen = false;
     },
+    // 返回页面顶部
     handler_backtop() {
-      console.log('handler_backtop');
       this.$refs.bs.scrollTop();
     }
   }
@@ -155,7 +159,7 @@ export default {
 @import '../../../assets/css/mixin_global'
 .detail
     padding-top 1rem
-    padding-bottom 5rem
+    padding-bottom 1rem
     position fixed
     z-index 950
     width 20rem
