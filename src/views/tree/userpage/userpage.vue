@@ -22,11 +22,6 @@
       <button @click="handler_canvas">canvas</button>
     </div>
     <!-- <h1>{{ $store.state.music.list_pay_pdd }}</h1> -->
-    <div>
-      <!-- <canvas id="canvas" width="100" height="200"></canvas> -->
-      <!-- <canvas id="canvas"></canvas> -->
-      <!-- <h1>delete canvas</h1> -->
-    </div>
   </div>
 </template>
 
