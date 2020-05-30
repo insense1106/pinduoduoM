@@ -23,7 +23,8 @@
     </div>
     <!-- <h1>{{ $store.state.music.list_pay_pdd }}</h1> -->
     <div>
-      <h1>add new content</h1>
+      <!-- <h1>add new content</h1> -->
+      <h1>delete the content</h1>
     </div>
   </div>
 </template>
