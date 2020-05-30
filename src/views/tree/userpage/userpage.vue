@@ -22,6 +22,9 @@
       <button @click="handler_canvas">canvas</button>
     </div>
     <!-- <h1>{{ $store.state.music.list_pay_pdd }}</h1> -->
+    <div>
+      <h1>add new content</h1>
+    </div>
   </div>
 </template>
 
